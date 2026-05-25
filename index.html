@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ArithmaGen // System.Active</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black overflow-hidden">
+  <main id="app-viewport" class="relative w-screen h-screen flex items-center justify-center">
+    <div id="workspace" class="relative w-full h-full border border-[#1A4D2E]">
+      
+      <canvas id="grid-layer" class="absolute inset-0"></canvas>
+      <canvas id="main-canvas" class="absolute inset-0"></canvas>
+      <canvas id="active-layer" class="absolute inset-0 pointer-events-none"></canvas>
+
+      <div id="ui-overlay" class="absolute inset-0 z-10 p-6 flex flex-col justify-between pointer-events-none">
+        <header class="flex justify-between items-start">
+          <h1 class="text-[#82ff6f] font-mono text-xl tracking-tighter uppercase">ArithmaGen // System.Active</h1>
+          <div class="text-[#1A4D2E] font-mono text-xs">DPR: <span id="dpi-val">1.0</span></div>
+        </header>
+        
+        <footer class="flex justify-between items-end">
+          <div id="coord-readout" class="text-[#1A4D2E] font-mono text-xs">X: 0.00 / Y: 0.00</div>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./src/index.ts"></script>
+</body>
+</html>
