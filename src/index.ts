@@ -8,3 +8,4 @@ export * from './utils/geometry.js';
 export * from './utils/rotation.js';
 export * from './utils/statistics.js';
 export * from './utils/traverse.js';
+export * from './utils/time.js';
