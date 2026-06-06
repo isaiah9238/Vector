@@ -5,7 +5,7 @@
     "target": "esnext",
     "module": "preserve",
     "moduleResolution": "bundler",
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "strict": true, 
     "sourceMap": true,
     "declaration": true,
