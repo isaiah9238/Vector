@@ -26,3 +26,15 @@ export interface ParametricLabFunction {
   getTMin: () => number;
   getTMax: () => number;
 }
+
+// Add these to your existing types.ts
+export interface ShelfVolume {
+  id: string;
+  vertices: Point3D[]; // Array of 8 corners for a 3D bounding box
+  origin: Point3D;    // Local coordinate anchor for rotation/scaling
+}
+
+export interface WarehouseEnvironment {
+  shelves: ShelfVolume[];
+  landmarks: Point3D[]; // Trees or pillars for resection
+}
